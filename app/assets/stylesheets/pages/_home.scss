@@ -1,1 +1,26 @@
 // Specific CSS for your home-page
+.banner-shine {
+  background-size: cover;
+  background-position: center;
+  width: auto;
+  height:81vh;
+  text-align: center;
+}
+
+.banner-shine h1 {
+  margin: 0;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  font-family: 'Moontime';
+  font-size: 62px;
+  font-weight: bold;
+  // text-align: center;
+}
+
+.banner-shine p {
+  font-size: 20px;
+  color: white;
+  opacity: .7;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  // text-align: center;
+}
