@@ -1,10 +1,22 @@
+.navbar-all {
+  background: $gold;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+ }
+
 .navbar-lewagon {
   display:flex;
-  justify-content: space-between;
   align-items: center;
   background: $gold;
-  padding: 0px 50px;
+  // padding: 0px 50px;
+}
 
+.navbar-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 // .navbar-lewagon .navbar-collapse {
@@ -14,18 +26,31 @@
 .navbar-lewagon .navbar-brand img {
   display:flex;
   justify-content: space-between;
-  width: 40px;
+  width:120px;
+  height: 90px;
   border-radius: 50px;
+
+}
+
+.navbar-lewagon {
+ padding-right:60px
 }
 
 .navbar-light .navbar-nav .nav-link {
     color: white;
     opacity:0.5;
+    margin-right: 22px;
+    align-items: center;
+    font-family: 'Mali';
+    font-size: 22px;
+    font-weight: bold;
 }
 
 .navbar-nav:hover .nav-link:hover {
   color: white;
-  opacity: 1;
+  opacity: 1 ;
+  border-style: solid;
+  border-radius: 10px;
 }
 
 // .navbar-light:hover .navbar-nav:hover .nav-link:hover {
