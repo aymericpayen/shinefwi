@@ -5,3 +5,23 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+require "open-uri"
+puts "Cleaning database..."
+
+Item.destroy_all
+
+puts "Creating database..."
+puts "Creating Items..."
+
+# Item.create(name: "", description: "", price: "", comments: [], quantity:0, type: "", price_range: "50€ - 150€")
+item1= Item.create(name: "Macrame XXL", description: "Des collections de macrame taille XXL", price: "", comments: [], quantity:0, type: "", price_range: "50€ - 150€")
+item2= Item.create(name: "Home décor", description: "Un univers de deco boho tropical pour sublimer vos espaces", price: "", comments: [], quantity:0, type: "", price_range: "50€ - 100€")
+item3 = Item.create(name: "La Mode", description: "La mode est un langage qui se crée dans des vêtements pour interpréter la réalité.", price: "", comments: [], quantity:0, type: "", price_range: "100€ - 200€")
+      # t.string :name
+      # t.text :description
+      # t.float :price
+      # t.text :comments
+      # t.integer :quantity
+      # t.text :type
+      # t.string :price_range
