@@ -1,29 +1,48 @@
 .item-show-split {
   margin: 20px 0px;
+
 }
 
 .carousel-item-img {
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
+  margin: auto;
+  background-size:contain;
+  height: 400px;
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.img {
+  border-radius: 20px;
 }
 
 .item-show-description {
-  border-right: 10px solid $gold;
-  border-radius: 5px;
+  border-right: 5px solid $gold;;
 }
 
-.item-show-description > h1 {
+.item-show-split > h1 {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 64px;
+  font-family: "Moontime";
+  color: $gold;
+  border: solid;
+  border-radius: 10px;
+  border-color: $gold;
+  margin-bottom: 20px;
+}
+
+.item-show-description > h2 {
   font-weight: bold;
   font-size: 32px;
   font-family: "Mali";
-  color: $gold;
+  color: $dark-blue;
+  border-bottom: 1px solid $gold;
 }
 
 .item-show-description > p {
   font-weight: bold;
   font-size: 12px;
   font-family: "Mali";
-  color: black;
+  color: $ligh-blue;
 }

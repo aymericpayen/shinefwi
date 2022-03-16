@@ -1,8 +1,14 @@
 <div class="container">
   <div class="item-show-split row">
+    <h1><%= @item.name %></h1>
     <div class="item-show-description col-6">
-      <h1><%= @item.name %></h1>
-      <p><%= @item.description %></p>
+      <h2>Histoire</h2>
+      <p><%= @item.description %> Ex occaecat quis cupidatat mollit sunt ad non commodo nulla ullamco velit non velit. Ullamco eu ipsum qui voluptate officia aliquip incididunt nisi. Eu ex ipsum laboris eu proident minim ex voluptate eiusmod commodo ut amet nostrud.
+      Lorem ad tempor nostrud cupidatat velit. Adipisicing consequat voluptate occaecat proident ea amet. Aute esse exercitation do nulla cillum ex voluptate. Pariatur dolore dolore incididunt incididunt duis sint adipisicing laborum consectetur excepteur commodo aute voluptate. Laboris sint consectetur aliqua eu.</p>
+      <h2>Materiaux</h2>
+      <p>Officia id proident qui minim eiusmod duis est minim. Ullamco nostrud proident aliquip consectetur. Do tempor incididunt laborum fugiat quis cupidatat incididunt cupidatat exercitation deserunt laborum. Non tempor sit sit adipisicing aliqua consectetur do dolore eu ut incididunt. Ullamco duis sint sint elit. Ex ex mollit sunt excepteur nulla esse occaecat sunt. Do anim do dolor eiusmod elit sint nulla nostrud elit.</p>
+      <h2>Prix</h2>
+      <p> 100€-150€</p>
     </div>
     <div id="carouselExampleIndicators" class="carousel slide carousel-item-size col-6" data-bs-ride="carousel">
       <div class="carousel-indicators">
@@ -12,13 +18,13 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src=<%=image_path("items/macramexxl/macrame-xxl-1.jpeg") %> class="d-block w-100 carousel-item-img" alt="...">
+          <img src=<%=image_path("items/macramexxl/macrame-xxl-1.jpeg") %> class="d-block carousel-item-img" alt="...">
         </div>
         <div class="carousel-item">
-          <img src=<%=image_path("items/macramexxl/macrame-xxl-2.jpeg") %>  class="d-block w-100 carousel-item-img" alt="...">
+          <img src=<%=image_path("items/macramexxl/macrame-xxl-2.jpeg") %>  class="d-block carousel-item-img" alt="...">
         </div>
         <div class="carousel-item">
-          <img src=<%=image_path("items/macramexxl/macrame-xxl-3.jpeg") %>  class="d-block w-100 carousel-item-img" alt="...">
+          <img src=<%=image_path("items/macramexxl/macrame-xxl-3.jpeg") %>  class="d-block carousel-item-img" alt="...">
         </div>
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
