@@ -1,0 +1,29 @@
+.item-show-split {
+  margin: 20px 0px;
+}
+
+.carousel-item-img {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+}
+
+.item-show-description {
+  border-right: 10px solid $gold;
+  border-radius: 5px;
+}
+
+.item-show-description > h1 {
+  font-weight: bold;
+  font-size: 32px;
+  font-family: "Mali";
+  color: $gold;
+}
+
+.item-show-description > p {
+  font-weight: bold;
+  font-size: 12px;
+  font-family: "Mali";
+  color: black;
+}
