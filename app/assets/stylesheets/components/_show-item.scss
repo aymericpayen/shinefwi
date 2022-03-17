@@ -1,6 +1,15 @@
 .item-show-split {
-  margin: 20px 0px;
+  margin: 20px 0px 10px 0px;
 
+}
+
+.fa-arrow-circle-left {
+  color: $gold;
+  opacity: 0.5;
+}
+
+.fa-arrow-circle-left:hover {
+  opacity: 1;
 }
 
 .carousel-item-img {
@@ -15,21 +24,11 @@
   border-radius: 20px;
 }
 
-.item-show-description {
-  border-right: 5px solid $gold;;
-}
-
-.item-show-split > h1 {
-  display: flex;
-  justify-content: center;
-  font-weight: bold;
+.item-header-name > h1 {
   font-size: 64px;
   font-family: "Moontime";
+  font-weight: bold;
   color: $gold;
-  border: solid;
-  border-radius: 10px;
-  border-color: $gold;
-  margin-bottom: 20px;
 }
 
 .item-show-description > h2 {
@@ -41,8 +40,7 @@
 }
 
 .item-show-description > p {
-  font-weight: bold;
   font-size: 12px;
   font-family: "Mali";
-  color: $ligh-blue;
+  color: $ligh-blue
 }
