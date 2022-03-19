@@ -1,3 +1,22 @@
+.showroom-presentation {
+  margin: 20px;
+}
+.showroom-presentation > h1 {
+  font-size: 64px;
+  font-family: "Moontime";
+  font-weight: bold;
+  color: $gold;
+}
+
+.summary-icons {
+  color: $gold;
+}
+
+.summary-icons-details > i {
+  font-size: 12px;
+  font-style: italic;
+  color: $dark-blue;
+}
 .card-item {
   overflow: hidden;
   background: white;
@@ -43,7 +62,6 @@
   margin-bottom: 0;
   margin-top: 8px;
 }
-
 
 
 a:link, a:visited {
