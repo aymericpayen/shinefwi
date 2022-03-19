@@ -1,16 +1,31 @@
 <div class="container">
   <h1>shoowroom bitch</h1>
-  <div class="items">
+  <div class="row">
     <% @items.each do |item|%>
-      <%= link_to item_path(item) do %>
-        <div class="card-item">
-          <img src= <%=image_path(item.photo) %> />
-          <div class="card-item-infos">
-            <h5 class="item-name"><%= item.name %> </h5>
-            <p class="item-description"><%=item.description.truncate(100)%></p>
+      <div class="col-3">
+        <%= link_to item_path(item) do %>
+          <div class="card-item">
+            <img src= <%=image_path(item.photo) %> />
+            <div class="card-item-infos">
+              <h5 class="item-name"><%= item.name %> </h5>
+              <p class="item-description"><%=item.description.truncate(100)%></p>
+            </div>
           </div>
-        </div>
-      <% end %>
+        <% end %>
+      </div>
+    <% end %>
+    <% @items.each do |item|%>
+      <div class="col-3">
+        <%= link_to item_path(item) do %>
+          <div class="card-item">
+            <img src= <%=image_path(item.photo) %> />
+            <div class="card-item-infos">
+              <h5 class="item-name"><%= item.name %> </h5>
+              <p class="item-description"><%=item.description.truncate(100)%></p>
+            </div>
+          </div>
+        <% end %>
+      </div>
     <% end %>
   </div>
 </div>

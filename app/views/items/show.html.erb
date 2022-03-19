@@ -1,15 +1,15 @@
 <div class="container">
   <div class="row">
-  <div class="row d-flex align-items-center item-show-split">
-    <div class="col">
-      <%= link_to items_path do %>
-        <i class="fas fa-arrow-circle-left fa-lg"></i>
-      <% end %>
+    <div class="row d-flex align-items-center item-show-split">
+      <div class="col">
+        <%= link_to items_path do %>
+          <i class="fas fa-arrow-circle-left fa-lg"></i>
+        <% end %>
+      </div>
+      <div class="item-header-name col-7">
+        <h1><%= @item.name %></h1>
+      </div>
     </div>
-    <div class="item-header-name col-7">
-      <h1><%= @item.name %></h1>
-    </div>
-  </div>
     <div class="item-show-description col-6">
       <h2>Histoire</h2>
       <p><%= @item.description %> Ex occaecat quis cupidatat mollit sunt ad non commodo nulla ullamco velit non velit. Ullamco eu ipsum qui voluptate officia aliquip incididunt nisi. Eu ex ipsum laboris eu proident minim ex voluptate eiusmod commodo ut amet nostrud.
