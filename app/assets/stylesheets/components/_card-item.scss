@@ -1,39 +1,60 @@
-.items {
-  display: flex;
-  justify-content: space-between;
+.showroom-presentation {
+  margin: 20px;
+}
+.showroom-presentation > h1 {
+  font-size: 64px;
+  font-family: "Moontime";
+  font-weight: bold;
+  color: $gold;
+}
+
+.summary-icons {
+  color: $gold;
+}
+
+.summary-icons-details > i {
+  font-size: 12px;
+  font-style: italic;
+  color: $dark-blue;
 }
 .card-item {
   overflow: hidden;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  border-radius: 4px;
+  border-radius: 20px;
   margin-bottom: 15px;
   height: 320px;
   width: 200px;
 }
 
+.card-item .card-item-infos {
+  padding: 10px;
+}
+
+.card-item:hover {
+  border-style:solid;
+  border-color: $gold;
+  border-width:2px;
+  opacity: 0.5;
+
+}
 .card-item img {
   height: 200px;
   width: 100%;
   object-fit: cover;
+  border-radius: 20px;
+  padding: 10px;
+
 }
 
-.card-item h2 {
-  font-size: 14px;
-  font-family: "Mali";
-  font-weight: bold;
-  margin-top: 54px;
-}
-
-.card-item h5 {
+.card-item-infos h5 {
   font-size: 16px;
   font-family: "Mali";
-  font-weight: bolder;
+  font-weight: bold;
   color: black;
 }
 
-
-.card-item p {
+.card-item-infos p {
   font-size: 12px;
   font-family: "Mali";
   line-height: 1.4;
@@ -42,6 +63,7 @@
   margin-top: 8px;
 }
 
-.card-item .card-item-infos {
-  padding: 16px;
+
+a:link, a:visited {
+  text-decoration: none;
 }

@@ -1,16 +1,47 @@
 <div class="container">
-  <h1>shoowroom bitch</h1>
-  <div class="items">
+  <div class="showroom-presentation text-center">
+    <h1>Nos produits</h1>
+    <p>Velit aliquip reprehenderit labore laborum labore enim ad ut laborum minim deserunt. Nostrud pariatur sunt non nisi deserunt adipisicing proident commodo nisi. Ad ipsum non ullamco reprehenderit eu laboris qui quis consequat mollit sunt. Labore ex deserunt occaecat minim adipisicing esse. Elit et voluptate esse tempor amet cupidatat consectetur quis quis laborum Lorem proident. Excepteur ex amet non eiusmod labore nostrud tempor.</p>
+    <div class="summary-icons">
+      <div class="row summary-icons-details">
+        <i class="fas fa-lg fa-recycle col-3"></i><p>Des matériaux recyclés sont utilisés</p>
+        <i class="fas fa-lg fa-map-marker-alt col-3">Produit localement</i>
+        <i class="fas fa-lg fa-leaf col-3">Respectueux de la nature</i>
+      </div>
+      <div class="row summary-icons-details">
+        <i class="far fa-lg fa-kiss-wink-heart col-3">Fait avec amour</i>
+        <i class="fas fa-lg fa-water col-3">Notre océan comme source d'inspiration</i>
+        <i class="fas fa-hand-heart col-3"></i>
+      </div>
+
+    </div>
+  </div>
+  <div class="row">
     <% @items.each do |item|%>
-      <%= link_to item_path(item) do %>
-        <div class="card-item">
-          <img src= <%=image_path(item.photo) %> />
-          <div class="card-item-infos">
-            <h5 class="item-name"><%= item.name %> </h5>
-            <p class="item-description"><%=item.description.truncate(100)%></p>
+      <div class="col-3">
+        <%= link_to item_path(item) do %>
+          <div class="card-item">
+            <img src= <%=image_path(item.photo) %> />
+            <div class="card-item-infos">
+              <h5 class="item-name"><%= item.name %> </h5>
+              <p class="item-description"><%=item.description.truncate(100)%></p>
+            </div>
           </div>
-        </div>
-      <% end %>
+        <% end %>
+      </div>
+    <% end %>
+    <% @items.each do |item|%>
+      <div class="col-3">
+        <%= link_to item_path(item) do %>
+          <div class="card-item">
+            <img src= <%=image_path(item.photo) %> />
+            <div class="card-item-infos">
+              <h5 class="item-name"><%= item.name %> </h5>
+              <p class="item-description"><%=item.description.truncate(100)%></p>
+            </div>
+          </div>
+        <% end %>
+      </div>
     <% end %>
   </div>
 </div>
