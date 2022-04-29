@@ -1,2 +1,18 @@
 // Import page-specific CSS files here.
 @import "home";
+.showroom-presentation {
+  margin: 20px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: $gold;
+  border-radius: 10px;
+  padding: 5px;
+
+}
+
+.showroom-presentation>h1 {
+  font-size: 64px;
+  font-family: "Moontime";
+  font-weight: bold;
+  color: $gold;
+}
