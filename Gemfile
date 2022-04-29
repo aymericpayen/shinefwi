@@ -22,8 +22,8 @@ gem 'turbolinks', '~> 5'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem "autoprefixer-rails", "10.2.5"
-gem "font-awesome-sass", "~> 5.15"
-gem "simple_form"
+gem "font-awesome-sass", "~> 5.6.1"
+gem 'simple_form', github: 'heartcombo/simple_form'
 gem 'devise'
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'cloudinary', '~> 1.16.0'
