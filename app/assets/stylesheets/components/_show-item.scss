@@ -1,6 +1,11 @@
+.row > h1 {
+  border-style: solid;
+  border-color: $gold;
+  border-width: 0px 0px 2px 0px;
+}
+
 .item-show-split {
   margin: 20px 0px 10px 0px;
-
 }
 
 .fa-arrow-circle-left {

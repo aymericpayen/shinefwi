@@ -3,15 +3,31 @@
 // a relevant structure within app/javascript and only use these pack files to reference
 // that code so it'll be compiled.
 
-import Rails from "@rails/ujs"
-import Turbolinks from "turbolinks"
-import * as ActiveStorage from "@rails/activestorage"
-import "channels"
-import "bootstrap";
-import "@fortawesome/fontawesome-free/css/all"
+
+import Rails from "@rails/ujs";
+import Turbolinks from "turbolinks";
+import * as ActiveStorage from "@rails/activestorage";
+import "channels";
+// import "bootstrap";
+import "@fortawesome/fontawesome-free/css/all";
+import "controllers";
+// // In your application.js (for example)
+import 'swiper/swiper-bundle.min.css';
+
+console.log("Hello from app/javascript/packs/application.js!");
+
 
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
 
-console.log("Hello from app/javascript/packs/application.js!");
+// require("@rails/ujs").start()
+// require("turbolinks").start()
+// require("@rails/activestorage").start()
+// require("channels")
+
+// console.log("hello from application.js")
+
+
+// import "controllers"
+// import "bootstrap"

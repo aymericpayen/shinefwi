@@ -1,8 +1,24 @@
+.group-of-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 .summary-icons {
   color: $gold;
 }
 
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px
+  // align-items: center;
+  // margin: 10px 0px 10px 0px;
+}
+
 .summary-icons-details {
+  display: flex;
+  flex-direction: column;
+  width: 350px
 }
 
 .summary-icons-details > i {
@@ -10,18 +26,24 @@
   font-style: italic;
   color: $dark-blue;
 }
+
+.icon {
+  display: flex;
+  justify-content: start;
+}
 .card-item {
-  overflow: hidden;
-  background: white;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  border-radius: 20px;
-  margin-bottom: 15px;
-  height: 320px;
-  width: 200px;
+overflow: hidden;
+background: white;
+box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+padding: 10px;
+border-radius: 5px;
+align-items: center;
+margin-bottom: 10px;
 }
 
-.card-item .card-item-infos {
+.card-item-infos {
   padding: 10px;
+  max-height: 150px;
 }
 
 .card-item:hover {
@@ -31,16 +53,15 @@
   opacity: 0.5;
 
 }
-.card-item img {
+.card-item > img {
   height: 200px;
   width: 100%;
   object-fit: cover;
-  border-radius: 20px;
-  padding: 10px;
+  border-radius: 5px;
 
 }
 
-.card-item-infos h5 {
+.card-item-infos h2 {
   font-size: 16px;
   font-family: "Mali";
   font-weight: bold;
@@ -50,10 +71,7 @@
 .card-item-infos p {
   font-size: 12px;
   font-family: "Mali";
-  line-height: 1.4;
-  opacity: .7;
-  margin-bottom: 0;
-  margin-top: 8px;
+  margin: 0;
 }
 
 
